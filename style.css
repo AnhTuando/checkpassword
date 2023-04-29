@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #161616;
+  color: aliceblue;
+}
+.password-box {
+  background: #3b3b3b;
+  display: flex;
+  width: 400px;
+  margin: 20px;
+  padding: 0px 10px;
+  justify-content: space-between;
+  line-height: 55px;
+  position: relative;
+}
+.notice,
+.notice-copied {
+  background-color: #3b3b3b;
+  position: absolute;
+  right: -75px;
+  top: 10px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 5px;
+  padding: 0px 5px;
+  display: none;
+}
+
+.password-box input {
+  background: #3b3b3b;
+  padding: 10px;
+  width: 350px;
+  border: none;
+  font-size: 22px;
+  color: rgb(151, 151, 151);
+  font-weight: 700;
+}
+.password-box input:focus {
+  outline: none;
+}
+.password-check {
+  background: #3b3b3b;
+  width: 400px;
+  padding: 20px;
+}
+.character-description {
+  display: flex;
+  justify-content: space-between;
+}
+.character-description .count {
+  color: #a6f0aa;
+}
+.character-range {
+  background-color: #161616;
+  width: 100%;
+
+  height: 5px;
+}
+
+.board {
+  background: #3b3b3b;
+  width: 400px;
+  padding: 0px 20px;
+}
+.check-letters {
+  display: flex;
+}
+.col-1,
+.col-2 {
+  display: flex;
+  flex-direction: column;
+}
+.col-1 {
+  gap: 10px;
+  margin-right: 20px;
+}
+.col-1 input {
+  height: 24px;
+}
+.col-2 {
+  gap: 10px;
+}
+.strength-box {
+  display: flex;
+  justify-content: space-between;
+  background-color: #272727;
+  padding: 20px 15px;
+  margin: 20px 0px;
+}
+.strength-box span {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #555555;
+}
+.level {
+  display: flex;
+}
+.lv-1,
+.lv-2,
+.lv-3,
+.lv-4 {
+  width: 8px;
+  height: 20px;
+  margin: 0px 5px;
+  border: 2px solid #cacaca;
+}
+
+.generate-box {
+  background-color: #a6f0aa;
+  padding: 20px 15px;
+  margin: 20px 0px;
+  text-align: center;
+  color: #272727;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+}
+.generate-box i {
+  margin: 0px 10px;
+}
+
+/* hover */
+.copy-password-btn:hover {
+  color: #a6f0aa;
+  cursor: pointer;
+}
+.generate-box:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.copy-password-btn:hover + .notice {
+  display: block;
+}
+.green {
+  background: greenyellow;
+}
+.red {
+  background: red;
+}
+.yellow {
+  background: yellow;
+}
